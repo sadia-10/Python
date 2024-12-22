@@ -129,6 +129,49 @@ print(find_hashtags(tweet))  # Output: ['#Python', '#CodingIsFun', '#100DaysOfCo
 
 ---
 
+
+## 📋 Table Regular Expression Pattern Syntax
+
+| **🔤 Element**             | **📖 Meaning**                                                                                                                                                    |
+|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **`.`**                   | Matches **any single character** except a newline (`\n`). This is like a wildcard that can be any letter, number, or symbol.                                       |
+| **`^`**                   | Matches the **start of a string**. If `MULTILINE` mode is enabled, it also matches the position right after a newline (`\n`).                                      |
+| **`$`**                   | Matches the **end of a string**. In `MULTILINE` mode, it also matches the position right before a newline (`\n`).                                                  |
+| **`*`**                   | Matches **zero or more occurrences** of the preceding pattern; it's **greedy** (tries to match as much as possible).                                               |
+| **`+`**                   | Matches **one or more occurrences** of the preceding pattern; **greedy**.                                                                                         |
+| **`?`**                   | Matches **zero or one occurrence** of the preceding pattern; **greedy**. It is useful for optional characters or patterns.                                          |
+| **`*?`, `+?`, `??`**      | These are **nongreedy** (or **lazy**) versions of `*`, `+`, and `?` respectively. They match as **few characters as possible**.                                    |
+| **`{m,n}`**               | Matches **between `m` and `n` occurrences** of the preceding pattern; **greedy**. You can use it to specify exact repetition.                                      |
+| **`{m,n}?`**              | Matches **between `m` and `n` occurrences** of the preceding pattern; **nongreedy**.                                                                               |
+| **`[...]`**               | Matches **any one character** from a set inside the brackets. For example, `[abc]` matches `a`, `b`, or `c`.                                                       |
+| **`[^...]`**              | Matches **any one character not** in the set inside the brackets. For example, `[^abc]` matches any character except `a`, `b`, or `c`.                              |
+| **`|`**                   | Acts like a logical **OR**; matches **either** the pattern before or after it. For example, `cat|dog` matches "cat" or "dog".                                       |
+| **`(...)`**               | Matches the pattern inside the parentheses and **creates a capturing group**. Use it to group patterns for extraction or backreferences.                           |
+| **`(?:...)`**             | Matches the pattern inside the parentheses but **does not create a capturing group**. Useful for grouping without capturing.                                       |
+| **`(?P<id>...)`**         | Matches the pattern and **names the group** as `id`. Named groups make patterns more readable and easier to reference.                                             |
+| **`(?P=id)`**             | Matches **the same text** as previously matched by the named group `id`. Use it to refer back to the named group.                                                  |
+| **`(?#...)`**             | A **comment** inside the regex pattern; helps improve readability without affecting the match.                                                                     |
+| **`(?=...)`**             | **Positive lookahead**: Matches if the pattern matches what comes next, but does **not consume** any characters. Used to assert that something follows.            |
+| **`(?!...)`**             | **Negative lookahead**: Matches if the pattern does **not** match what comes next, without consuming any characters. Useful for excluding patterns.                 |
+| **`(?<=...)`**            | **Positive lookbehind**: Matches if the pattern precedes the current position; must match a fixed length. Ensures something comes before the match.                |
+| **`(?<!...)`**            | **Negative lookbehind**: Matches if the pattern does **not** precede the current position; must match a fixed length.                                               |
+| **`\number`**             | Matches the text previously matched by the group **numbered `number`**. Useful for reusing matched patterns.                                                      |
+| **`\A`**                  | Matches the **start of the entire string**. Unlike `^`, it is not affected by `MULTILINE`.                                                                        |
+| **`\b`**                  | Matches a **word boundary** (the start or end of a word). Helps match whole words only.                                                                            |
+| **`\B`**                  | Matches a position that is **not a word boundary**. Useful for ensuring a match occurs within a word.                                                             |
+| **`\d`**                  | Matches a **digit** (equivalent to `[0-9]`). In Unicode mode, it matches any Unicode digit.                                                                        |
+| **`\D`**                  | Matches a **non-digit** (equivalent to `[^0-9]`).                                                                                                                 |
+| **`\s`**                  | Matches a **whitespace character** (spaces, tabs, newlines, etc.).                                                                                                |
+| **`\S`**                  | Matches a **non-whitespace character**.                                                                                                                           |
+| **`\w`**                  | Matches an **alphanumeric character** (letters, digits, underscore). Equivalent to `[a-zA-Z0-9_]`.                                                                |
+| **`\W`**                  | Matches a **non-alphanumeric character**.                                                                                                                         |
+| **`\Z`**                  | Matches the **end of the entire string**. Unlike `$`, it is not affected by `MULTILINE`.                                                                          |
+| **`\\`**                  | Matches a **literal backslash** (`\`) character. Useful for escaping special characters.                                                                           |
+| **`(?iLmsux)`**           | Alternate way to **set optional flags** within a pattern. Flags control the regex behavior (case insensitivity, multiline mode, etc.).                             |
+
+
+---
+
 ## Conclusion
 Regular Expressions are an essential skill for any developer working with text data. With practice, they become an invaluable tool for solving real-world problems efficiently.
 
