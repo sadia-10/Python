@@ -1,16 +1,16 @@
-# Regular Expressions in Python 🔄
+# Regular Expressions in Python 🔍🐍
 
 ## Overview 
 Regular Expressions (regex) are a powerful tool for pattern matching and text manipulation. They allow you to find, extract, and manipulate strings based on specific patterns. Python provides the `re` module to work with regex, making tasks like data validation, searching, and replacing text efficient and straightforward.
 
 ---
 
-## History of Regular Expressions 🕜
+## History of Regular Expressions 📜
 Regular Expressions were first introduced by mathematician Stephen Cole Kleene in the 1950s as a way to describe regular languages. Over the years, they evolved into a practical tool for text processing and have become a standard feature in most programming languages, including Python. Today, regex is widely used in fields like data science, web development, and natural language processing.
 
 ---
 
-## Why Use Regular Expressions? 
+## Why Use Regular Expressions? 🤔
 - **🔍 Searching Text:** Find specific words or patterns in large data.
 - **🎛️ Data Validation:** Validate formats like email addresses, phone numbers, etc.
 - **✏️ Text Manipulation:** Replace, split, or extract parts of text based on patterns.
@@ -28,7 +28,7 @@ Despite these differences, the core concepts of regular expressions remain the s
 
 ---
 
-## How to Use the `re` Module 🔄
+## How to Use the `re` Module 🛠️
 Python's `re` module provides a simple interface for working with regular expressions. Here are the main steps:
 
 1. **Import the Module:**
@@ -63,7 +63,7 @@ Python's `re` module provides a simple interface for working with regular expres
 
 ---
 
-## Key Regex Functions in Python 
+## Key Regex Functions in Python 📚
 Here are the commonly used functions in the `re` module:
 
 1. `re.match()` - Checks for a match only at the beginning of the string.
@@ -74,7 +74,7 @@ Here are the commonly used functions in the `re` module:
 
 ---
 
-## Real-World Examples 🌍
+## Real-World Examples 🌟
 
 ### 1. Validating Email Addresses 📧
 ```python
@@ -135,7 +135,7 @@ print(mask_credit_card(text))  # Output: My credit card number is ****-****-****
 
 ---
 
-### 4. Splitting a Sentence into Words ✉
+### 4. Splitting a Sentence into Words ✂️
 ```python
 import re
 
@@ -153,7 +153,7 @@ print(split_sentence(sentence))  # Output: ['Hello', 'world', 'Welcome', 'to', '
 
 ---
 
-### 5. Finding All Hashtags in a Tweet 🌟
+### 5. Finding All Hashtags in a Tweet 🏷️
 ```python
 import re
 
@@ -172,14 +172,14 @@ print(find_hashtags(tweet))  # Output: ['#Python', '#CodingIsFun', '#100DaysOfCo
 
 ---
 
-## Tips for Writing Regex Patterns 🔧
+## Tips for Writing Regex Patterns 🧰
 - **Use Raw Strings:** Always use `r""` to avoid escaping backslashes.
 - **Test Patterns:** Use tools like [Regex101](https://regex101.com/) to test your patterns.
 - **Keep It Simple:** Write patterns incrementally and test at each step.
 
 ---
 
-## Complete Example File: `main.py` 
+## Complete Example File: `main.py` 📂
 ```python
 import re
 
@@ -214,6 +214,6 @@ if __name__ == "__main__":
 
 ---
 
-## Conclusion 
+## Conclusion 🎉
 Regular Expressions are an essential skill for any developer working with text data. With practice, they become an invaluable tool for solving real-world problems efficiently. Happy coding! 🚀
 
