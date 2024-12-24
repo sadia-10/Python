@@ -1,4 +1,4 @@
-# Python Scope Explained with Examples ✨
+# Scope Explained with Examples ✨
 
 ## Introduction 🚀
 In Python, **scope** refers to the region of a program where a particular variable or name is accessible. Understanding scope is crucial for avoiding bugs and ensuring your code behaves as expected.
